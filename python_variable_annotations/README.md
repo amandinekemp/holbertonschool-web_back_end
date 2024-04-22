@@ -1,5 +1,5 @@
 <p align="center">
-    <img [Python - Variable Annotations] src="">
+    <img [Python - Variable Annotations] src="https://www.algorystcorner.com/content/images/size/w1200/2023/02/Variable-annotation-banner.png">
 </p>
 
 ----------
@@ -10,18 +10,37 @@
 
 ## ➤ Menu:
 
-* [➤ Description]()
-* [➤ Resources]()
-* [➤ General]()
-* [➤ Requirements]()
-* [➤ Tasks]()
-* [➤ Author]()
+* [➤ Description](https://github.com/amandinekemp/holbertonschool-web_back_end/tree/main/python_variable_annotations#-description)
+* [➤ Resources](https://github.com/amandinekemp/holbertonschool-web_back_end/tree/main/python_variable_annotations#-resources)
+* [➤ General](https://github.com/amandinekemp/holbertonschool-web_back_end/tree/main/python_variable_annotations#-general)
+* [➤ Requirements](https://github.com/amandinekemp/holbertonschool-web_back_end/tree/main/python_variable_annotations#-requirements)
+* [➤ Tasks](https://github.com/amandinekemp/holbertonschool-web_back_end/tree/main/python_variable_annotations#author-)
+* [➤ Author](https://github.com/amandinekemp/holbertonschool-web_back_end/tree/main/python_variable_annotations#author-)
 
 ----------
 
 ## ➤ Description:
 
+Type annotations in Python 3 allow you to specify variable types and function signatures, which can improve code readability and maintainability.
 
+To use type annotations, you can add type indications to a function's parameters and return. For example:
+
+```python
+def add_numbers(a: int, b: int) -> int:
+    return a + b
+```
+In this example, we've specified that the parameters `a` and `b` must be integers, and that the function must return an integer.
+
+Python uses dynamic typing, which means that variables have no fixed type and can change type during program execution. However, Python also uses "duck typing", which means that the type of a variable is determined by its behavior rather than by its explicit declaration.
+
+To validate your code with mypy, you can run the mypy program on your source code. Mypy will check that the types specified in your type annotations are consistent with the actual types of variables and functions used in your code. If type errors are detected, mypy will display error messages to help you correct them.
+
+Here's an example of how to use mypy:
+
+```
+$ mypy my_program.py
+```
+In this example, mypy will check the `my_program.py` file for type errors. If errors are detected, mypy will display error messages to help you correct them.
 
 ----------
 
