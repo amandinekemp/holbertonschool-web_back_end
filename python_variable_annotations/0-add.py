@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""add"""
+"""The ‘add’ function takes two floating-point numbers as input
+and returns their sum"""
 
 
 def add(a: float, b: float) -> float:
