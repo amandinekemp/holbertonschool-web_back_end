@@ -10,18 +10,24 @@
 
 ## ➤ Menu:
 
-* [➤ Description]()
-* [➤ Resources]()
-* [➤ Learning Objectives]()
-* [➤ Requirements]()
-* [➤ Tasks]()
-* [➤ Author]()
+* [➤ Description](#-description)
+* [➤ Resources](#-resources)
+* [➤ Learning Objectives](#-learning-objectives)
+* [➤ Requirements](#-requirements)
+* [➤ Tasks](#author-)
+* [➤ Author](#author-)
 
 ----------
 
 ## ➤ Description:
 
+The `async` and `await` syntax in Python can be used to create asynchronous functions, also known as coroutines. To execute an asynchronous function, use the `asyncio` library.
 
+To create a coroutine, use the `async` keyword before the function definition. To call a coroutine, use the `await` keyword. To execute an asynchronous function, use the `asyncio.run()` function, which takes the coroutine to be executed as a parameter.
+
+To execute several coroutines concurrently, use the `asyncio.gather()` function, which takes as parameter a list of coroutines to be executed. To create an asynchronous task, use the `asyncio.create_task()` function, which takes a coroutine to execute as its parameter.
+
+Finally, to use the `random` module, you can import the functions you need and use them in an asynchronous function. For example, you could use the function `random.randint()` to generate a random number between 0 and a given integer, then use `await asyncio.sleep()` to wait for this number of seconds before terminating the coroutine.
 
 ----------
 
