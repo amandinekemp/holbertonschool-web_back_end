@@ -5,10 +5,9 @@ delay between 0 and `max_delay` seconds, then returns this delay."""
 
 import asyncio
 import random
-from typing import Optional
 
 
-async def wait_random(max_delay: Optional[int] = 10) -> float:
+async def wait_random(max_delay: int = 10) -> float:
     """Wait for a random delay and return it
 
     Args:
