@@ -1,34 +1,36 @@
 #!/usr/bin/env python3
-"""
-Provides some stats about Nginx logs stored in MongoDB
-"""
+"""Provides some stats about Nginx logs stored in MongoDB"""
+
+# Import MongoClient from pymongo module
 from pymongo import MongoClient
 
 
 def log_stats():
     """
-    provides some stats about Nginx logs stored in MongoDB
+    Retrieve and display some stats about Nginx logs stored in MongoDB
     """
-    # Connect to the MongoDB server
-    client = MongoClient('mongodb://127.0.0.1:27017')
+    # Establish a connection to the MongoDB server
+    client = MongoClient("mongodb://127.0.0.1:27017")
 
-    # Access the 'logs' database and 'nginx' collection
+    # Gain access to the 'logs' database and 'nginx' collection
     db = client.logs
     collection = db.nginx
 
-    # Get the total number of logs
+    # Retrieve the total number of logs
     total_logs = collection.count_documents({})
 
-    # Get the counts for each HTTP method
+    # Retrieve the counts for each HTTP method
     methods = ["GET", "POST", "PUT", "PATCH", "DELETE"]
-    method_counts = {method: collection.count_documents(
-        {"method": method}) for method in methods}
+    method_counts = {
+        method: collection.count_documents(
+            {"method": method}) for method in methods}
 
-    # Get the count of logs with method=GET and path=/status
+    # Retrieve the count of logs where method is 'GET' and path is '/status'
     status_check_count = collection.count_documents(
-        {"method": "GET", "path": "/status"})
+        {"method": "GET", "path": "/status"}
+    )
 
-    # Print the results
+    # Display the results
     print(f"{total_logs} logs")
     print("Methods:")
     for method in methods:
