@@ -54,11 +54,16 @@ class Server:
         # Return the appropriate page of the dataset
         return self.dataset()[start:end]
 
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
+        """Function hypermedia pagination
 
-class Server:
+        Args:
+            page (int, optional): _description_. Defaults to 1.
+            page_size (int, optional): _description_. Defaults to 10.
 
-    def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
-        """Return a dictionary of pagination data."""
+        Returns:
+            Dict: Dictionnary of data and all information
+        """
         data = self.get_page(page, page_size)
         total_pages = math.ceil(len(self.dataset()) / page_size)
 
