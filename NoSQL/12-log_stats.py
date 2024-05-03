@@ -4,9 +4,10 @@
 # Import MongoClient from pymongo module
 from pymongo import MongoClient
 
+
 def log_stats():
     # Create a MongoClient to the running mongod instance
-    client = MongoClient('mongodb://127.0.0.1:27017')
+    client = MongoClient("mongodb://127.0.0.1:27017")
     # Access the 'logs' database and 'nginx' collection
     logs_collection = client.logs.nginx
 
@@ -20,11 +21,13 @@ def log_stats():
     print("Methods:")
     for method in methods:
         # Count the number of documents with the current method
-        count = logs_collection.count_documents({'method': method})
+        count = logs_collection.count_documents({"method": method})
         # Print the method and its count
         print(f"\tmethod {method}: {count}")
 
-    # Count the number of documents where method is 'GET' and path is '/status'
-    status_check_count = logs_collection.count_documents({'method': 'GET', 'path': '/status'})
+    # Count the number of documents where method is'GET'and path is'/status'
+    status_check_count = logs_collection.count_documents(
+        {"method": "GET", "path": "/status"}
+    )
     # Print the count of status checks
     print(f"{status_check_count} status check")
