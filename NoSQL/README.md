@@ -1,5 +1,5 @@
 <p align="center">
-    <img [NoSQL] src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.datastax.com%2Fblog%2Fsql-vs-nosql-whats-the-difference&psig=AOvVaw2JmQwK0bAVi-633LGsKSLU&ust=1714812790214000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPD6kNCN8YUDFQAAAAAdAAAAABAD">
+    <img [NoSQL] src="https://cdn.sanity.io/images/bbnkhnhl/production/ae792d9ec362a0eee4d8a47a4e7a7b48c156c46d-1460x968.png?w=3840&q=75&fit=clip&auto=format">
 </p>
 
 ----------
