@@ -8,4 +8,4 @@ def update_topics(mongo_collection, name, topics):
     name (string): The name of the school to update
     topics (list of strings): The list of topics approached in the school
     """
-    mongo_collection.update_one({'name': name}, {'$set': {'topics': topics}})
+    mongo_collection.update_many({'name': name}, {'$set': {'topics': topics}})
