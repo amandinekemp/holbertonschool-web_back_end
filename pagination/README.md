@@ -1,5 +1,5 @@
 <p align="center">
-    <img [Pagination] src="">
+    <img [Pagination] src="https://github.com/amandinekemp/holbertonschool-web_back_end/blob/main/pagination/pagination.png">
 </p>
 
 ----------
