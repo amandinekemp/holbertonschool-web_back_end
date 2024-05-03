@@ -52,7 +52,8 @@ class Server:
         return dataset[start_index:end_index]
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
-        """Returns a dictionary of data and all information for hypermedia pagination
+        """Returns a dictionary of data and all information for hypermedia
+        pagination
 
         Args:
             page (int, optional): The page number. Defaults to 1.
