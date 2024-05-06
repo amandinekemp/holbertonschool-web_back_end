@@ -1,3 +1,5 @@
+// Exports a default function that takes a Boolean argument
+
 export default function taskBlock(trueOrFalse) {
     let task = false
     let task2 = true
