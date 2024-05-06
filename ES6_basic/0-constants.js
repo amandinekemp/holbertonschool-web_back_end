@@ -1,19 +1,24 @@
 /**
 * Returns a string declared with 'const'.
-* return {string} - A string.
 */
 export function taskFirst() {
-    const task = 'I prefer const when I can.'
-    return task
-  }
+  const task = 'I prefer const when I can.'
+  return task
+}
 
+/**
+* Returns a static string.
+*/
 export function getLast() {
-    return ' is okay'
-  }
+  return ' is okay'
+}
 
+/**
+* Returns a string declared with 'let'.
+*/
 export function taskNext() {
-    let combination = 'But sometimes let'
-    combination += getLast()
+  let combination = 'But sometimes let'
+  combination += getLast()
 
-    return combination
-  }
+  return combination
+}
