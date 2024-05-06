@@ -14,7 +14,7 @@
 * [➤ Resources](#-resources)
 * [➤ Learning Objectives](#-learning-objectives)
 * [➤ Requirements](#-requirements)
-* [➤ More Info](#-more-info)
+* [➤ Setup](#-setup)
 * [➤ Tasks](#author-)
 * [➤ Author](#author-)
 
