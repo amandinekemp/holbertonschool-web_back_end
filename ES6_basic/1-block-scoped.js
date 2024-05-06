@@ -1,5 +1,5 @@
 /**
-* Exports a default function that takes a Boolean argument
+* Exports a default function that takes a Boolean argument.
 */
 export default function taskBlock(trueOrFalse) {
     const task = false
