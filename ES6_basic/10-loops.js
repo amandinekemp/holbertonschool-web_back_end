@@ -1,11 +1,13 @@
-// Adds a string to each value in an array
 export default function appendToEachArrayValue(array, appendString) {
-  // Loop over each element in the array
-  for (let idx = 0; idx < array.length; idx++) {
-    // Concatenate the string to the current value
-    array[idx] = appendString + array[idx];
+  // New array to store modified values
+  const newArray = [];
+
+  // Loop over each value in original array
+  for (const value of array) {
+    // Concatenate the string to the current value and add the result to the new array
+    newArray.push(appendString + value);
   }
 
   // Return the modified array
-  return array;
+  return newArray;
 }
