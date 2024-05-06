@@ -1,9 +1,6 @@
 /**
 * Exports a default function that takes a Boolean argument
-*
 */
-
-
 export default function taskBlock(trueOrFalse) {
     const task = false
     const task2 = true
