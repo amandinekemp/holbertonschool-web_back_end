@@ -1,4 +1,4 @@
-class HolbertonCourse {
+export default class HolbertonCourse {
   // Constructor of the HolbertonCourse class
   constructor(name, length, students) {
     // Check the type of the name attribute
@@ -55,11 +55,9 @@ class HolbertonCourse {
   // Setter for the students attribute
   set students(value) {
     // Check the type of the value assigned to students
-    if (!Array.isArray(value)) {
+    if (!Array.isArray((value) => typeof value !== 'object')) {
       throw new TypeError('Students must be an array');
     }
     this._students = value;
   }
 }
-
-export default HolbertonCourse;
