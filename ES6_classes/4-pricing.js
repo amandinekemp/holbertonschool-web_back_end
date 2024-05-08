@@ -9,7 +9,7 @@ export default class Pricing {
       throw new TypeError('Amount must be a Number');
     }
     if (!(currency instanceof Currency)) {
-      throw new TypeError('currency must be a currency');
+      throw new TypeError('Currency must be a currency');
     }
 
     // Initializing the attributes with an underscore
@@ -39,7 +39,7 @@ export default class Pricing {
 
   // Method to display the full price
   displayFullPrice() {
-    return `${this._amount} ${this._currency._name} (${this._currency._code})`;
+    return `${this.amount} ${this.currency._name} (${this.currency._code})`;
   }
 
   // Static method to convert a price
