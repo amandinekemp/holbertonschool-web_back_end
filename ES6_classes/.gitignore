@@ -1,6 +1,7 @@
 *-main.js
 *.pyc
 node_modules/
+.eslintrc.js
 
 # Modules npm
 /node_modules
