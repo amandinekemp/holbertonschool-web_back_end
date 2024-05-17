@@ -1,6 +1,3 @@
-*-main.js
-*.pyc
-
 # Modules npm
 /node_modules
 # Fichiers de verrouillage
