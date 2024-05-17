@@ -22,7 +22,7 @@
 
 ## ➤ Description:
 
-
+Promises in ES6 are objects that represent the eventual completion or failure of an asynchronous operation. They are used with the then(), resolve() and catch() methods to handle results or errors. The Promise object has several methods, such as all(), race(), reject() and others. Throw and try are used to handle errors in Promises. The await operator and async functions are used to write asynchronous code in a simpler, more readable way using Promises. In short, Promises in ES6 offer a more structured and efficient way of handling asynchronous operations in JavaScript.
 
 ----------
 
