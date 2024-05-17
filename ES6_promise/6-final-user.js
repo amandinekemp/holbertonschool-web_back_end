@@ -1,8 +1,6 @@
 import signUpUser from './4-user-promise';
 import uploadPhoto from './5-photo-reject';
 
-export default handleProfileSignup;
-
 const handleProfileSignup = async (firstName, lastName, fileName) => {
 	const result = [];
 	try {
@@ -16,3 +14,5 @@ const handleProfileSignup = async (firstName, lastName, fileName) => {
 	}
 	return result;
 };
+
+export default handleProfileSignup;
