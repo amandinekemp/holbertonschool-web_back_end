@@ -1,5 +1,5 @@
 <p align="center">
-    <img [ES6 data manipulation] src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fshazaali.substack.com%2Fp%2F0x03-es6-data-manipulation%3Futm_source%3Dprofile%26utm_medium%3Dreader2&psig=AOvVaw3lkXmzvvMchPspeqfL51l_&ust=1716454474076000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPiJ0K_xoIYDFQAAAAAdAAAAABAP">
+    <img [ES6 data manipulation] src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT12oi743cfrrUSRa8a_syfYO9dkSFl1MBTcA&usqp=CAU">
 </p>
 
 ----------
